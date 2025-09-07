@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Personal Shape</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="w-full p-3 justify-between relative flex items-center z-50 bg-white">
+        <a class="inline-block text-3xl font-bold bg-gradient-to-r from-indigo-500 to-pink-600 bg-clip-text text-transparent"
+            href="#">Personal Shape</a>
+        <label class="text-2xl hidden max-md:flex cursor-pointer" for="menubtn"><i class="fa-solid fa-bars"></i></label>
+        <input class="hidden peer" id="menubtn" type="checkbox" />
+        <nav
+            class="transition-transform duration-300 max-md:flex max-md:justify-center max-md:items-center top-0 max-md:fixed max-md:w-full max-md:h-screen max-md:bg-[#0f172afa] max-md:translate-x-full peer-checked:max-md:translate-x-0 z-50">
+
+            <label class="absolute top-3 right-3 text-2xl text-white hidden max-md:flex cursor-pointer" for="menubtn">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+
+            <ul class="max-md:flex-col flex justify-center gap-3 items-center transition-all duration-200">
+                <li><a class="max-md:text-white text-black transition-all duration-200 hover:text-violet-500 max-sm:text-3xl max-md:text-6xl"
+                        href="#">Home</a></li>
+                <li><a class="max-md:text-white text-black transition-all duration-200 hover:text-violet-500 max-sm:text-3xl max-md:text-6xl"
+                        href="#">About</a></li>
+                <li><a class="max-md:text-white text-black transition-all duration-200 hover:text-violet-500 max-sm:text-3xl max-md:text-6xl"
+                        href="#">Portfolio</a></li>
+                <li><a class="max-md:text-white text-black transition-all duration-200 hover:text-violet-500 max-sm:text-3xl max-md:text-6xl"
+                        href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section
+        class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none z-0">
+        </div>
+        <div class="absolute top-20 left-20 w-40 h-40 bg-white opacity-10 rounded-full"></div>
+        <div class="absolute bottom-28 right-28 w-52 h-52 bg-white opacity-10 rounded-lg"></div>
+        <div class="absolute top-1/2 right-1/4 w-32 h-32 bg-white opacity-5 rounded-full"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h4 class="uppercase tracking-widest text-sm text-white/80 mb-4">Creative Designer</h4>
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                Transforming Ideas<br />Into Beautiful<br />Experiences
+            </h1>
+            <p class="text-lg text-white/90 mt-6 max-w-2xl mx-auto">
+                I craft digital experiences that captivate, engage, and inspire through thoughtful design and innovative
+                solutions
+            </p>
+            <a href="#portfolio"
+                class="mt-10 inline-block px-8 py-4 bg-slate-250 shadow-[inset_0_0_20px_white,0_0_20px_gray] text-white hover:text-purple-600 font-semibold rounded-full hover:bg-gray-200 transition duration-300">
+                Explore My Work
+            </a>
+        </div>
+    </section>
+
+    <div class="aboutcontainer w-full py-[100px] h-auto flex justify-center items-center flex-col gap-[50px]">
+        <h1 class="text-4xl text-purple-500">About me</h1>
+        <div class="flex justify-around w-full items-center gap-[15px] flex-wrap">
+            <img class="rounded-[30px] h-[400px] w-[400px] object-cover"
+                src="https://templatemo.com/templates/templatemo_593_personal_shape/images/smiling-girl-computer-desktop.jpg"
+                alt="">
+            <div class="flex gap-[15px] w-[600px] max-w-full justify-center items-center flex-col px-4">
+                <h1 class="text-3xl font-bold text-[#0f172a] text-center md:text-left">Passionate about creating
+                    meaningful
+                    digital experiences</h1>
+                <p class="text-[#64748b] text-center md:text-left">With over 5 years of experience in digital design, I
+                    specialize in creating user-centered solutions that bridge the gap between functionality and
+                    aesthetics.</p>
+                <ul class="w-full flex gap-[10px] justify-center md:justify-start items-center flex-wrap">
+                    <li
+                        class="cursor-pointer flex justify-center border border-purple-500 items-center px-4 py-2 rounded-[30px] bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                        UI/UX Design</li>
+                    <li
+                        class="flex justify-center border border-purple-500 items-center px-4 py-2 rounded-[30px] bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                        Web Development</li>
+                    <li
+                        class="cursor-pointer flex justify-center border border-purple-500 items-center px-4 py-2 rounded-[30px] bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                        Brand Identity</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container1 w-full py-[100px] h-auto flex justify-center items-center flex-col gap-[50px]">
+        <h1 class="text-4xl text-purple-500">Featured Work</h1>
+        <div class="grid gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div
+                class="flex flex-col w-full h-auto overflow-hidden rounded-3xl shadow-2xl transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img class="w-full h-[200px] object-cover"
+                    src="https://templatemo.com/templates/templatemo_593_personal_shape/images/working-business-women.jpg"
+                    alt="">
+                <div class="p-5 flex flex-col gap-3">
+                    <h3 class="text-2xl">E-commerce Platform</h3>
+                    <p class="text-[#64748b] text-sm">A modern, responsive e-commerce solution focusing on UX and
+                        scalability.</p>
+                    <ul class="w-full flex gap-[15px] justify-start items-center flex-wrap">
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            React</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Node.Js</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            MongoDB</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Stripe</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="flex flex-col w-full h-auto overflow-hidden rounded-3xl shadow-2xl transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img class="w-full h-[200px] object-cover"
+                    src="https://templatemo.com/templates/templatemo_593_personal_shape/images/computer-desk-stickers.jpg"
+                    alt="">
+                <div class="p-5 flex flex-col gap-3">
+                    <h3 class="text-2xl">Brand Identity System</h3>
+                    <p class="text-[#64748b] text-sm">Complete visual identity redesign for a startup.</p>
+                    <ul class="w-full flex gap-[15px] justify-start items-center flex-wrap">
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Illustrator</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Photoshop</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Figma</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            After Effects</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="flex flex-col w-full h-auto overflow-hidden rounded-3xl shadow-2xl transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img class="w-full h-[200px] object-cover"
+                    src="https://templatemo.com/templates/templatemo_593_personal_shape/images/curved-display-pinky-girl.jpg"
+                    alt="">
+                <div class="p-5 flex flex-col gap-3">
+                    <h3 class="text-2xl">Mobile App Design</h3>
+                    <p class="text-[#64748b] text-sm">Intuitive app interface for fitness tracking with gamification.
+                    </p>
+                    <ul class="w-full flex gap-[15px] justify-start items-center flex-wrap">
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Figma</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Principle</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            React Native</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Lottie</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="flex flex-col w-full h-auto overflow-hidden rounded-3xl shadow-2xl transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img class="w-full h-[200px] object-cover"
+                    src="https://templatemo.com/templates/templatemo_593_personal_shape/images/dashboard-interfaces-transparent-displays.jpg"
+                    alt="">
+                <div class="p-5 flex flex-col gap-3">
+                    <h3 class="text-2xl">Dashboard Interface</h3>
+                    <p class="text-[#64748b] text-sm">Clean dashboard design with real-time analytics.</p>
+                    <ul class="w-full flex gap-[15px] justify-start items-center flex-wrap">
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Vue.js</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            D3.js</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            SCSS</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Chart.js</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="flex flex-col w-full h-auto overflow-hidden rounded-3xl shadow-2xl transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img class="w-full h-[200px] object-cover"
+                    src="https://templatemo.com/templates/templatemo_593_personal_shape/images/marketing-strategy-women.jpg"
+                    alt="">
+                <div class="p-5 flex flex-col gap-3">
+                    <h3 class="text-2xl">Marketing Website</h3>
+                    <p class="text-[#64748b] text-sm">Marketing website with interactive animations and SEO
+                        optimization.</p>
+                    <ul class="w-full flex gap-[15px] justify-start items-center flex-wrap">
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Next.js</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Framer Motion</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Tailwind CSS</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Vercel</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="flex flex-col w-full h-auto overflow-hidden rounded-3xl shadow-2xl transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <img class="w-full h-[200px] object-cover"
+                    src="https://templatemo.com/templates/templatemo_593_personal_shape/images/portfolio-website-girl.jpg"
+                    alt="">
+                <div class="p-5 flex flex-col gap-3">
+                    <h3 class="text-2xl">Creative Portfolio</h3>
+                    <p class="text-[#64748b] text-sm">Immersive portfolio with galleries and smooth transitions.</p>
+                    <ul class="w-full flex gap-[15px] justify-start items-center flex-wrap">
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            React</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            Three.js</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            GSAP</li>
+                        <li
+                            class="cursor-pointer flex justify-center border-[1px] border-purple-500 items-center px-3 py-1 rounded-[30px] text-sm bg-white text-purple-500 hover:bg-purple-500 hover:text-white">
+                            WebGL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section
+        class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none z-0">
+        </div>
+        <div class="container mx-auto px-6 text-center relative z-10 flex justify-center items-center flex-col">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Let's Work Together</h1>
+            <form action="#" method="POST" class="space-y-6 w-full max-w-2xl mt-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Your full name"
+                        class="w-full rounded-xl bg-white/10 border border-white/20 text-white px-4 py-3">
+                    <input type="email" placeholder="your.email@example.com"
+                        class="w-full rounded-xl bg-white/10 border border-white/20 text-white px-4 py-3">
+                </div>
+                <input type="text" placeholder="Subject"
+                    class="w-full rounded-xl bg-white/10 border border-white/20 text-white px-4 py-3">
+                <textarea rows="5" placeholder="Tell me about your project..."
+                    class="w-full rounded-xl bg-white/10 border border-white/20 text-white px-4 py-3"></textarea>
+                <button type="submit"
+                    class="px-8 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold hover:opacity-90 transition">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

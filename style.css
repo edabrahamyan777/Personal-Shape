@@ -1,0 +1,11 @@
+#menubtn:checked~nav {
+    right: 0;
+}
+
+#menubtn:checked~label {
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+}
